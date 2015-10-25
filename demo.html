@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>myFocus v2.0版本</title>
+<script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script>
+<style type="text/css">
+	body{ 
+		background:#fff; 
+		padding:20px;
+	}
+	h2{
+		height:42px; 
+		line-height:42px; 
+		background:#f1f1f1; 
+		margin-bottom:20px; 
+		font-size:12px; 
+		color:#666; 
+		font-weight:normal;
+	}
+	#myFocus{ 
+		width:1366px; 
+		height:768px;
+	}
+</style>
+<script type="text/javascript">
+//设置
+myFocus.set({
+	id:'myFocus',//ID
+	pattern:'mF_fancy'//风格对应于js下的mf-pattern中
+	//的js和css风格
+});
+</script>
+</head>
+<body>
+<h2>提示：可以修改"pattern"参数的值以更换不同的样式风格</h2>
+<div id="myFocus"><!--焦点图盒子-->
+  <div class="loading"><img src="img/loading.gif" alt="请稍候..." /></div><!--载入画面(可删除)-->
+  <div class="pic"><!--图片列表-->
+  	<ul>
+        <li><a href="#1"><img src="img/ad4.jpg" thumb="" alt="图片1来源于网络，版权属于yxq" text="图片1更详细的描述文字" /></a></li>
+        <li><a href="#2"><img src="img/ad3.jpg" thumb="" alt="版权属于yxq，图片2来源于网络" text="图片2更详细的描述文字" /></a></li>
+        <li><a href="#3"><img src="img/ad2.jpg" thumb="" alt="图片3来源于网络，版权属于yxq" text="图片3更详细的描述文字" /></a></li>
+        <li><a href="https://www.baidu.com/"><img src="img/ad1.jpg" thumb="" alt="版权属于yxq，图片4来源于网络" text="图片4更详细的描述文字" /></a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
